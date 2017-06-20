@@ -390,7 +390,6 @@
             this.textBoxInput.Size = new System.Drawing.Size(550, 139);
             this.textBoxInput.TabIndex = 1;
             this.textBoxInput.Text = "";
-            this.textBoxInput.TextChanged += new System.EventHandler(this.textBoxInput_TextChanged);
             this.textBoxInput.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxInput_KeyDown);
             // 
             // tabPageDEBUG
@@ -406,6 +405,7 @@
             // 
             // debugTextBox
             // 
+            this.debugTextBox.Cursor = System.Windows.Forms.Cursors.No;
             this.debugTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.debugTextBox.Location = new System.Drawing.Point(3, 3);
             this.debugTextBox.Name = "debugTextBox";
