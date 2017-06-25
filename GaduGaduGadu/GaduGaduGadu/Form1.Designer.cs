@@ -64,6 +64,11 @@
             this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
             this.tabPageDB_contacts = new System.Windows.Forms.TabPage();
             this.dataGridViewContacts = new System.Windows.Forms.DataGridView();
+            this.buttonDebugRefresh = new System.Windows.Forms.Button();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.flowLayoutContacts = new System.Windows.Forms.FlowLayoutPanel();
             this.tabsControl.SuspendLayout();
             this.tabPageLogin.SuspendLayout();
             this.groupBoxLogOut.SuspendLayout();
@@ -73,6 +78,7 @@
             this.tabPageTalk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -83,6 +89,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.tabPageDB_contacts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewContacts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
+            this.flowLayoutContacts.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabsControl
@@ -341,6 +351,10 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer3);
             this.splitContainer1.Size = new System.Drawing.Size(889, 591);
             this.splitContainer1.SplitterDistance = 550;
             this.splitContainer1.TabIndex = 2;
@@ -358,6 +372,7 @@
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.buttonDebugRefresh);
             this.splitContainer2.Panel2.Controls.Add(this.textBoxInput);
             this.splitContainer2.Size = new System.Drawing.Size(550, 591);
             this.splitContainer2.SplitterDistance = 448;
@@ -456,6 +471,64 @@
             this.dataGridViewContacts.Size = new System.Drawing.Size(883, 585);
             this.dataGridViewContacts.TabIndex = 0;
             // 
+            // buttonDebugRefresh
+            // 
+            this.buttonDebugRefresh.Location = new System.Drawing.Point(407, 113);
+            this.buttonDebugRefresh.Name = "buttonDebugRefresh";
+            this.buttonDebugRefresh.Size = new System.Drawing.Size(140, 23);
+            this.buttonDebugRefresh.TabIndex = 2;
+            this.buttonDebugRefresh.Text = "debug Refresh";
+            this.buttonDebugRefresh.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer3
+            // 
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
+            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.flowLayoutContacts);
+            this.splitContainer3.Size = new System.Drawing.Size(335, 591);
+            this.splitContainer3.SplitterDistance = 500;
+            this.splitContainer3.TabIndex = 0;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(3, 26);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(55, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioB";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(3, 3);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(85, 17);
+            this.radioButton5.TabIndex = 4;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "radioButton5";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutContacts
+            // 
+            this.flowLayoutContacts.AutoScroll = true;
+            this.flowLayoutContacts.Controls.Add(this.radioButton5);
+            this.flowLayoutContacts.Controls.Add(this.radioButton2);
+            this.flowLayoutContacts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutContacts.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutContacts.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutContacts.Name = "flowLayoutContacts";
+            this.flowLayoutContacts.Size = new System.Drawing.Size(335, 500);
+            this.flowLayoutContacts.TabIndex = 5;
+            this.flowLayoutContacts.WrapContents = false;
+            // 
             // GaduForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -475,6 +548,7 @@
             this.groupBox1.PerformLayout();
             this.tabPageTalk.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
@@ -486,6 +560,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).EndInit();
             this.tabPageDB_contacts.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewContacts)).EndInit();
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
+            this.splitContainer3.ResumeLayout(false);
+            this.flowLayoutContacts.ResumeLayout(false);
+            this.flowLayoutContacts.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -526,6 +605,11 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.RichTextBox textBoxInput;
+        private System.Windows.Forms.Button buttonDebugRefresh;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutContacts;
     }
 }
 

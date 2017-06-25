@@ -16,7 +16,13 @@ namespace GaduGaduGadu
         public GaduForm()
         {
             InitializeComponent();
-            //textBoxChat.Clear();
+            textBoxChat.Clear();
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                flowLayoutContacts.Controls.Add(new RadioButton() { Text = "butt! "+i });
+            }
         }
 
         private void textBoxInput_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
